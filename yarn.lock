@@ -138,7 +138,7 @@ ix@^7.0.0:
     "@types/node" ">=13.7.4"
     tslib "^2.6.2"
 
-multiformats@^14.0.0:
+multiformats@^14, multiformats@^14.0.0:
   version "14.0.5"
   resolved "https://registry.yarnpkg.com/multiformats/-/multiformats-14.0.5.tgz#3d9819edefb885d9029cedcae565fd0a8f3052df"
   integrity sha512-vbIm83F2yZ1pWJGS0yl0ysracIvv56LtbrIyiIQHoLdYDJOMoLfVFsXhh9DUH4SFdkdkFhucyWniihsNzVEjkQ==

@@ -19,6 +19,7 @@
   "dependencies": {
     "@ipld/dag-pb": "^4.2.0",
     "ix": "^7.0.0",
+    "multiformats": "^14",
     "ramda": "^0.32.0"
   }
 }
