@@ -1,22 +1,18 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "node16",
-    "moduleResolution": "node16",
-    "allowSyntheticDefaultImports": true,
-    "allowJs": true,
-    "importHelpers": true,
-    "jsx": "react",
-    "alwaysStrict": true,
+    "target": "es2022",
+    "module": "nodenext",
+    "noEmit": true,
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
+    "types": ["node"],
     "sourceMap": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitAny": false,
-    "noImplicitThis": false,
-    "strictNullChecks": false
+    "strict": false
   },
   "include": [
     "src/**/*",

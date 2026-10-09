@@ -1,5 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
+import * as os from 'os';
+import { decode } from '@ipld/dag-pb';
 import * as ix from 'ix/asynciterable';
 import { filter, flatMap, map, scan, takeLast, pluck } from 'ix/asynciterable/operators';
 import { omit, pathOr } from 'ramda';
@@ -8,7 +10,6 @@ const readDag = async filename=>{
   const content = fs.readFileSync(filename, {flag: 'r'});
   try {
     
-    const { decode } = await import('@ipld/dag-pb')
     const node = decode(content)
 
     return {
@@ -76,7 +77,7 @@ async function searchBlock(repoPath) {
 }
 
 searchBlock(path.join(
-  require('os').homedir(),
+  os.homedir(),
   '.ipfs/blocks'
   )
 ).catch(console.error);

@@ -2,16 +2,18 @@
   "name": "find-biggest-dag",
   "version": "0.0.1",
   "description": "Search biggest dag among ipfs blocks.",
+  "type": "module",
   "engines": {
     "node": ">= 24"
   },
   "devDependencies": {
+    "@types/node": "^24",
     "@types/ramda": "^0.32.0",
-    "ts-node": "^10.9.2",
-    "typescript": "~5.9.3"
+    "typescript": "^7.0.2"
   },
   "scripts": {
-    "start": "ts-node src/main.ts"
+    "start": "node src/main.ts",
+    "typecheck": "tsc --noEmit"
   },
   "license": "MIT",
   "dependencies": {
